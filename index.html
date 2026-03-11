@@ -164,16 +164,18 @@
         .about-img { border-left: 6px solid var(--accent-yellow); position: relative; }
         .about-img img { border-radius: 0 20px 20px 0; }
         .about-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
-        .about-card { background: var(--white); color: #333; padding: 20px; border-radius: 50%; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1); position: relative; }
+        .about-card { background: var(--white); color: #333; padding: 20px; border-radius: 80%; text-align: center; box-shadow: 0 10px 15px rgba(0,0,0,0.1); position: relative; }
         .about-card::before { content: ''; position: absolute; top: -10px; left: 50%; transform: translateX(-50%); width: 50px; height: 50px; background: var(--accent-yellow); border-radius: 50%; z-index: -1; }
         .about-card h3 { color: var(--primary-blue); margin-bottom: 10px; font-size: 1.5rem; }
 
         .team { background: var(--primary-blue); color: white; text-align: center; }
-        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
-        .team-card { background: white; color: #333; padding-bottom: 20px; border-bottom: 5px solid var(--accent-yellow); transition: var(--transition); }
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; margin-top: 40px;; }
+        .team-card { background: white; color: #333; padding-bottom: 5px; border-bottom: 5px solid var(--accent-yellow); transition: var(--transition);border-radius: 10px }
         .team-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.3); }
-        .team-card img { height: 300px; width: 100%; object-fit: cover; margin-bottom: 15px; border-radius: 10px 10px 0 0; }
+        .team-card img { height: 280px; ; width: 100%; object-fit: cover; margin-bottom: 15px; border-radius: 10px 10px 0 0; }
         .team-card h3 { margin: 0; color: var(--primary-blue); }
+        .team-card .nana{ margin-top: 0px;}
+        .team-card .david{margin-bottom:  ;}
 
         .rdv-section { position: relative; color: white; min-height: 600px; display: flex; align-items: center; overflow: hidden; }
         .rdv-bg { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
@@ -249,7 +251,7 @@
         <div class="nav-brand">
             <img src="logo.jpg" alt="Réal David Corporation Logo">
             <div class="brand-text">
-                <h1 class="bebas">RÉAL DAVID CORPORATION TOGO</h1>
+                <h1 class="bebas">REAL DAVID CORPORATION TOGO</h1>
                 <span>BTP · Bâtiment Travaux Publics</span>
             </div>
         </div>
@@ -269,7 +271,7 @@
     <header class="hero">
         <div class="slider-container">
             <div class="slide active">
-                <img src="slide.jpg" alt="Chantier de construction moderne">
+                <img src="slide3.png " alt="Chantier de construction moderne">
                 <div class="hero-overlay"></div>
                 <div class="hero-content">
                     <h2 class="bebas">NOUS BÂTISSONS VOS RÊVES</h2>
@@ -278,7 +280,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="slide1.png" alt="Construction de route au Togo">
+                <img src="2ndsl.jpg" alt="Construction de route au Togo">
                 <div class="hero-overlay"></div>
                 <div class="hero-content">
                     <h2 class="bebas">DES INFRASTRUCTURES QUI DURENT</h2>
@@ -296,7 +298,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="slide3.png" alt="Projet immobilier">
+                <img src="oi.png" alt="Projet immobilier">
                 <div class="hero-overlay"></div>
                 <div class="hero-content">
                     <h2 class="bebas">VOTRE PROJET, NOTRE EXPERTISE</h2>
@@ -321,7 +323,7 @@
         </div>
         <div class="stat-item">
             <span class="stat-emoji">📍</span>
-            <div class="stat-number" data-target="500"></div>
+            <div class="stat-number" data-target="200"></div>
             <p class="stat-label">+ Projets livrés</p>
         </div>
         <div class="stat-item">
@@ -347,7 +349,7 @@
                 </div>
             </div>
             <div class="service-card">
-                <img src="im2.jpg" alt="Travaux Publics">
+                <img src="tp.jpg" alt="Travaux Publics">
                 <div class="service-overlay">
                     <h3 class="bebas" style="font-size: 1.8rem;">Travaux Publics</h3>
                     <div class="service-list">
@@ -356,7 +358,7 @@
                 </div>
             </div>
             <div class="service-card">
-                <img src="im3.jpg" alt="Services Immobiliers">
+                <img src="immo.jpg" alt="Services Immobiliers">
                 <div class="service-overlay">
                     <h3 class="bebas" style="font-size: 1.8rem;">Services Immobiliers</h3>
                     <div class="service-list">
@@ -401,15 +403,24 @@
             </div>
             <div>
                 <h2 class="bebas" style="font-size: 2.5rem; color: var(--primary-blue);">À Propos</h2>
-                <p>Qualité: Chaque projet est suivi avec rigueur du premier coup de pioche jusqu'à la livraison.</p>
+                <p> Real David Corporation est une entreprise spécialisée en Bâtiment et Travaux Publics (BTP) basée à Lomé – TOGO.
+
+Nous intervenons dans la conception, la construction et la réalisation de projets de grande envergure, en mettant l’accent sur la qualité, la rigueur et le respect des délais.
+</p>
                 <div class="about-cards">
                     <div class="about-card">
                         <h3 class="bebas">MISSION</h3>
-                        <p>Contribuer au développement urbain du Togo par des projets durables et innovants.</p>
+                        <p>Notre mission est claire : transformer chaque projet en  une réalisation solide, durable et moderne. Grâce à une équipe compétente et des équipements adaptés, nous accompagnons nos clients — particuliers, entreprises et institutions — à chaque étape, de l’étude à la livraison.
+
+Chez Real David Corporation, nous croyons que bâtir ne consiste pas seulement à construire des structures, <br>mais à créer de la valeur,<br> de la confiance et <br>de l’avenir.
+.</p>
                     </div>
                     <div class="about-card">
                         <h3 class="bebas">VISION</h3>
-                        <p>Être la référence BTP en Afrique, alliant qualité, professionnalisme et durabilité.</p>
+                        <p>La vision de Real David Corporation est de devenir une entreprise de référence en Bâtiment et Travaux Publics au Togo et en Afrique, reconnue pour son excellence, son innovation et son intégrité.
+
+Notre ambition est de transformer chaque projet en un symbole de qualité et de solidité, en intégrant les meilleures pratiques du secteur et des solutions innovantes adaptées aux <br> réalités locales.
+</p>
                     </div>
                 </div>
             </div>
@@ -421,17 +432,17 @@
         <p style="text-align: center; margin-bottom: 40px;">Des professionnels engagés pour des travaux durables et fiables.</p>
         <div class="team-grid">
             <div class="team-card">
-                <img src="david.png" alt="David AMAZOHOUN">
+                <img class="david" src="dgdav.jpg" alt="David AMAZOHOUN">
                 <h3>David AMAZOHOUN</h3>
                 <p>Directeur Général</p>
             </div>
             <div class="team-card">
-                <img src="nana.png" alt="NANA Akua Birmeh">
+                <img class="nana" src="nana.png" alt="NANA Akua Birmeh">
                 <h3>NANA Akua Birmeh</h3>
                 <p>Architecte</p>
             </div>
             <div class="team-card">
-                <img src="anicet.png" alt="COMBATE Anicet">
+                <img class="anicet" src="anicet.png" alt="COMBATE Anicet">
                 <h3>COMBATE Anicet</h3>
                 <p>Technicien Chantier</p>
             </div>
@@ -448,7 +459,7 @@
         <div class="rdv-container section-padding">
             <h2 class="bebas" style="font-size: 3rem; text-align: center; margin-bottom: 10px;">VOUS AVEZ UN PROJET DE CONSTRUCTION ?</h2>
             <p style="text-align: center; margin-bottom: 30px; font-size: 1.2rem;">Décrivez-nous votre projet, nous vous recontactons sous 24h.</p>
-            <form id="rdvForm" action="https://formspree.io/f/mjgedonr" method="POST">
+            <form id="rdvForm" action="https://formspree.io/f/mlgpboja" method="POST">
                 <input type="hidden" name="_replyto" value="realdavidcorporationtg@gmail.com">
                 <div class="form-group">
                     <input type="text" name="nom" placeholder="Nom complet *" required>
